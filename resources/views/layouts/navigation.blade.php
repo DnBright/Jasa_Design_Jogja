@@ -15,6 +15,18 @@
                     <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
                         {{ __('Dashboard') }}
                     </x-nav-link>
+                    <x-nav-link :href="route('admin.settings.edit')" :active="request()->routeIs('admin.settings.*')">
+                        {{ __('Umum') }}
+                    </x-nav-link>
+                    <x-nav-link :href="route('admin.services.index')" :active="request()->routeIs('admin.services.*')">
+                        {{ __('Layanan') }}
+                    </x-nav-link>
+                    <x-nav-link :href="route('admin.portfolios.index')" :active="request()->routeIs('admin.portfolios.*')">
+                        {{ __('Portofolio') }}
+                    </x-nav-link>
+                    <x-nav-link :href="route('admin.pricing-plans.index')" :active="request()->routeIs('admin.pricing-plans.*')">
+                        {{ __('Paket Harga') }}
+                    </x-nav-link>
                 </div>
             </div>
 
@@ -69,6 +81,18 @@
         <div class="pt-2 pb-3 space-y-1">
             <x-responsive-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
                 {{ __('Dashboard') }}
+            </x-responsive-nav-link>
+            <x-responsive-nav-link :href="route('admin.settings.edit')" :active="request()->routeIs('admin.settings.*')">
+                {{ __('Umum') }}
+            </x-responsive-nav-link>
+            <x-responsive-nav-link :href="route('admin.services.index')" :active="request()->routeIs('admin.services.*')">
+                {{ __('Layanan') }}
+            </x-responsive-nav-link>
+            <x-responsive-nav-link :href="route('admin.portfolios.index')" :active="request()->routeIs('admin.portfolios.*')">
+                {{ __('Portofolio') }}
+            </x-responsive-nav-link>
+            <x-responsive-nav-link :href="route('admin.pricing-plans.index')" :active="request()->routeIs('admin.pricing-plans.*')">
+                {{ __('Paket Harga') }}
             </x-responsive-nav-link>
         </div>
 
